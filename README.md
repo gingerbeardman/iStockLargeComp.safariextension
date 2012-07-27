@@ -3,6 +3,15 @@ iStockLargeComp.safariextension
 
 Generates a downloadable large comp from the individual zoom tiles on iStockphoto.com
 
+## Background
+
+iStockPhoto has a zoom function that lets you pan around a large version of the image, loading sections of it as you go.  
+It's kind of like Google Maps, but with a photo or illustration instead of a map. 
+
+## How it works
+
+This extension loads all the individual zoom tiles, stitches them together as a large image, and gives you a handy download link.
+
 ## How to use
 Once activated, there will be an extra option underneath the image "Download a large comp":
 
