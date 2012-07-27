@@ -6,7 +6,7 @@ Zepto(function($){
 
 	//set some defaults
 	var maxZoom = zoomSizes[1];	//default zoom
-	var totalTiles = totalWidth = totalHeight = counter = 0;
+	var totalTiles = targetWidth = targetHeight = counter = 0;
 	
 	//if we have a fileid on this page, inject content
 	if ($('#ZoomFileID').attr('value')) {
@@ -89,9 +89,9 @@ Zepto(function($){
 		//if valid image
 		img.onload = function() {
 			//calc total width using first row
-			if (c < tileWidth) totalWidth += img.width;
+			if (c < tileWidth) targetWidth += img.width;
 			//calc total height using first col
-			if (c % tileWidth == 0) totalHeight += img.height;
+			if (c % tileWidth == 0) targetHeight += img.height;
 			
 			//once we've got the dimensions, reduce tile size as a preview
 			img.height = img.height / 10;
@@ -110,7 +110,7 @@ Zepto(function($){
 				//wait a moment for final tile to load
 				setTimeout(function() {
 					//draw images onto canvas
-					concatenateImages(totalWidth, totalHeight)
+					concatenateImages(targetWidth, targetHeight)
 				}, 600);
 			}
 		};
