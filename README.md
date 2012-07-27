@@ -29,6 +29,34 @@ Step 2/3
 Step 3/3  
 ![Download ready](http://www.gingerbeardman.com/safari/istocklargecomp-step3.png)
 
+### How can you help?
 
-## License
+Grab max zoom information by reusing/hooking into the XMLHttpRequest to `ajax_class_creator.php`  
+This would also mean that the script could use trusted, accurate values for targetWidth and targetHeight rather than having to calculate them in an error-prone way.
+
+Sample JSON response from [a sample page](http://www.istockphoto.com/stock-illustration-20718384-burj-khalifa.php):
+
+	{
+	    "size": 37,
+	    "move": "zoomout",
+	    "currentX": 1897,
+	    "currentY": 3147,
+	    "images": [
+	        ...
+	    ],
+	    "constraintRight": 3237,
+	    "constraintBottom": 5720,
+	    "divWidth": 3800,
+	    "divHeight": 6460,
+	    "divLeft": -1707,
+	    "divTop": -2957,
+	    "viewPortWidth": 380,
+	    "viewPortHeight": 380,
+	    "targetWidth": "3617",
+	    "targetHeight": "6100",
+	    "host": "http:\/\/www.istockphoto.com\/",
+	    "sampleImage": ""
+	}
+
+### License
 This is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
