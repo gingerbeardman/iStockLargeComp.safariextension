@@ -3,7 +3,6 @@ Zepto(function($){
 	var imgType = $('#imgExt').attr('value');
 	var zoomSizes = eval($('#ZoomAvilSizes').attr('value'));
 	var maxZoom = zoomSizes[1];	//default zoom
-	// var maxZoom = zoomSizes[zoomSizes.length - 1];	//full zoom
 
 	var totalTiles = totalWidth = totalHeight = counter = 0;
 	
@@ -12,26 +11,15 @@ Zepto(function($){
 
 		$('#downloadLargeComp').click(function() {
 			$("#ZoomImage").trigger('click');
-			$("#zoomInImg").trigger('click');
-			// $("#wrapper").hide();
-			
-			$.ajaxJSONP({
-				url: 'http://www.istockphoto.com/ajax_class_creator.php',
-				success: function(data){
-					// data is a js object, such as Object or Array
-					console.log(data);
-				}
-			})
-			// console.log(zoomFile.myRequest.transport.responseText);
+			$("#wrapper").hide();
 			
 			setTimeout(function() {
 				tileHeight = Math.ceil(Math.abs(parseInt($("#h0Img").css('height')))/380);
 				tileWidth = Math.ceil(Math.abs(parseInt($("#h0Img").css('width')))/380);
-				// console.log(tileHeight +","+ tileWidth);
 				totalTiles = tileWidth * tileHeight;
 
-				// $("#wrapper").show();
-				// glue();
+				$("#wrapper").show();
+				glue();
 			}, 1000);
 
 			return false;
