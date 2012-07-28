@@ -1,15 +1,20 @@
 Zepto(function($){
-	//get some form values
-	var artworkID = $('#ZoomFileID').attr('value');
-	var imgType = $('#imgExt').attr('value');
-	var zoomSizes = eval($('#ZoomAvilSizes').attr('value'));
+	//if we are signed in on this page, inject our content
+	if ($('#headerMemberName').length) {
+		var maxZoom;
+		
+		//get some form values
+		var artworkID = $('#ZoomFileID').attr('value');
+		var imgType = $('#imgExt').attr('value');
+		if ($('#ZoomAvilSizes')) {
+			var zoomSizes = eval($('#ZoomAvilSizes').attr('value'));
+			//set default zoom
+			if (zoomSizes) maxZoom = zoomSizes[1];	//default zoom
+		}
 
-	//set some defaults
-	var maxZoom = zoomSizes[1];	//default zoom
-	var totalTiles = targetWidth = targetHeight = counter = 0;
+		//set some defaults
+		var totalTiles = targetWidth = targetHeight = counter = 0;
 	
-	//if we have a fileid on this page, inject content
-	if ($('#ZoomFileID').attr('value')) {
 		//add new link to download a large comp
 		$('#downloadAComp').html($('#downloadAComp').html() +'<img src="http://i.istockimg.com/static/images/blank.gif" class="sptGreySeparator">'+'<a href="#downloadLargeComp" id="downloadLargeComp">Download a large comp</a>');
 
@@ -38,8 +43,8 @@ Zepto(function($){
 			return false;
 		});
 	} else {
-		//zoom only works when signed in
-		$('#downloadAComp').html('Sign in to download large comp');
+		//otherwise, if not signed in display notice
+		$('#downloadAComp').html($('#downloadAComp').html() +'<img src="http://i.istockimg.com/static/images/blank.gif" class="sptGreySeparator">'+'Sign in to download large comp');
 	}
 
 	function tileLoad() {
@@ -51,7 +56,7 @@ Zepto(function($){
 		//create status div
 		var status = document.createElement("DIV");
 		status.setAttribute('style', 'clear: both;');
-		status.innerHTML = "<p id=\"status\"></p>";
+		status.innerHTML = "<p id=\"status\"></p><div id=\"ZoomImgLoading\"></div>";
 		document.getElementById('wrapper').appendChild(status);
 
 		//create container div
