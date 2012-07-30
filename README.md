@@ -1,5 +1,4 @@
-iStockLargeComp.safariextension
-==============================
+# iStockLargeComp
 
 Generates a downloadable large comp from the individual zoom tiles on iStockphoto.com
 
@@ -15,7 +14,7 @@ The process takes a minute or two, but is a lot faster than if you had to do it 
 
 ## Download
 
-[iStockLargeComp.safariextension](http://www.gingerbeardman.com/safari/iStockLargeComp.safariextz) (19KB)
+[iStockLargeComp.safariextz](http://www.gingerbeardman.com/safari/iStockLargeComp.safariextz) (19KB)
 
 ## How to use
 Once activated, there will be an extra option underneath the image "Download a large comp":
