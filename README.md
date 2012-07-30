@@ -13,6 +13,10 @@ It's kind of like Google Maps, but with a photo or illustration instead of a map
 This extension loads all the individual zoom tiles, stitches them together as a large image, and gives you a handy download link.  
 The process takes a minute or two, but is a lot faster than if you had to do it by hand.
 
+## Download
+
+[iStockLargeComp.safariextension](http://www.gingerbeardman.com/safari/iStockLargeComp.safariextz) (19KB)
+
 ## How to use
 Once activated, there will be an extra option underneath the image "Download a large comp":
 
