@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Matt Sephton</string>
 	<key>Builder Version</key>
-	<string>8536.25</string>
+	<string>8536.26.17</string>
 	<key>CFBundleDisplayName</key>
 	<string>iStockLargeComp</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.01</string>
+	<string>2.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.01</string>
+	<string>2.0</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -33,7 +33,7 @@
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>Generates a downloadable large comp from the individual zoom tiles on iStockphoto.com</string>
+	<string>Changes the download comp link to point to a large comp on iStockphoto.com</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
