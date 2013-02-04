@@ -9,7 +9,7 @@ It is no longer split into tiles, but it's kind of like Google Maps with a photo
 
 ## How it works
 
-This extension replaces the download comp link with one that triggers the largest zoom and prompts you with a download.  
+This extension replaces the standard "Download a Comp" link with a better one that triggers the largest zoom and prompts you with a download.  
 
 ## Download
 
@@ -23,9 +23,9 @@ This is made available under a [Creative Commons Attribution-Share Alike 3.0 Unp
 
 ## Changelog
 
-**2013-02-04, version 2.0**  
+**2013-02-04, 2.0**  
 Changes the download comp link to point to a large comp.  
 You no longer have to be logged in to use this plugin.  
 
-**2012-07-28, version 1.01**  
+**2012-07-28, 1.01**  
 Generates a downloadable large comp from the individual zoom tiles.
