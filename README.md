@@ -23,7 +23,7 @@ This is made available under a [Creative Commons Attribution-Share Alike 3.0 Unp
 
 ## Changelog
 
-**2013-02-04, 2.0**  
+**2013-02-04, 2.01**  
 Changes the download comp link to point to a large comp.  
 You no longer have to be logged in to use this plugin.  
 
