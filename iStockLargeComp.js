@@ -17,7 +17,8 @@ Zepto(function($){
 		choice = confirm("Do you wish to download the Large Comp?");
 		
 		if (choice) {
-			document.location.href = $('#download-large-comp').attr('href');
+			//open in new window
+			window.open($('#download-large-comp').attr('href'));
 		}
 	}
 	
@@ -33,10 +34,9 @@ Zepto(function($){
 			$('#zoom-hover-div').trigger('click');
 
 			//trigger zoom in to max
-			setTimeout(clicker, 2000);
+			setTimeout(clicker, 250);
 		});
 	}
 
-	// setTimeout(init, 1000);
 	window.addEventListener("load", init, false)
 });
