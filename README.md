@@ -13,7 +13,7 @@ This extension replaces the standard "Download a Comp" link with a better one th
 
 ## Download
 
-[iStockLargeComp.safariextz](http://www.gingerbeardman.com/safari/iStockLargeComp.safariextz) (16KB)
+[iStockLargeComp.safariextz](http://www.gingerbeardman.com/safari/iStockLargeComp.safariextz)
 
 ## How to use
 Once activated, the option underneath the image will read "Download a Large Comp". You no longer have to be logged in to use this plugin.
