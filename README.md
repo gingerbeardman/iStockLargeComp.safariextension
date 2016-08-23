@@ -6,7 +6,7 @@ Adds a download large comp link on iStockphoto.com
 
 iStockPhoto has a zoom function that lets you view a larger version of the image.  
 
-This involves a targetted click on the centre of the image, and further clicks if you wish to save the large comp to your computer.
+This involves a targeted click on the centre of the image, and further clicks if you wish to save the large comp to your computer.
 
 In most instances it's not possible to view this zoomed image at its full size, or easily download it for use in your designs.  
 
@@ -19,7 +19,7 @@ This extension adds a "Download large comp" link, styled as a green button, that
 [iStockLargeComp.safariextz](http://www.gingerbeardman.com/safari/iStockLargeComp.safariextz)
 
 ## How to use
-Once activated, a green button "Download large comp" will be added to pages that contain a red button "Download this photo". 
+Once activated, a green button "Download large comp" will be added to pages that contain a red button "Download this photo".
 
 * Clicking the green button will open the zoomed image in a new tab.  
 * Option-clicking the green button to download the image immediately.  
