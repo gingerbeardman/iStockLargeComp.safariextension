@@ -1,42 +1,32 @@
-Zepto(function($){
-	//get some form values
-	var ZoomFileID = $('#ZoomFileID').attr('value');
-	var ZoomMaxSize = $('#ZoomMaxSize').attr('value');
-	var ZoomImageWidth = $('#ZoomImage').attr('width');
-	var ZoomImageHeight = $('#ZoomImage').attr('height');
+document.addEventListener("DOMContentLoaded", function(event) {
+	if (window.top === window) {
+		var uri = window.location.pathname.split('/');
+		var iStockName = uri[3].substr(0,uri[3].indexOf('gm')-1);
 
-	function clicker() {
-		//zoom in
-		for (c = 1; c <= ZoomMaxSize; c++)
-			$('#zoom-in-img').trigger('click');
+		var photo = uri[uri.length - 1].split('-');
+		var iStockId = photo[photo.length - 2].substr(2);
 
-		//zoom out
-		for (c = 1; c <= ZoomMaxSize; c++)
-			$('#zoom-out-img').trigger('click');
+		var iStockSize = '2048x2048';
 
-		choice = confirm("Do you wish to download the Large Comp?");
-		
-		if (choice) {
-			//open in new window
-			window.open($('#download-large-comp').attr('href'));
+		if (!document.getElementById('download-comp')) {
+			var checkExist = setInterval(function() {
+				if (document.getElementById('download-button')) {
+					clearInterval(checkExist);
+
+					var butt = document.createElement('a');
+					butt.textContent = 'Download large comp';
+					butt.id = 'download-comp';
+					butt.className = 'super-cta comp-cta';
+					butt.target = '_blank';
+					butt.href = 'http://media.istockphoto.com/photos/'+ iStockName +'-id'+ iStockId +'?s='+ iStockSize;
+
+					insertAfter( butt, document.getElementById('download-button') );
+				}
+			}, 100); // check every 100ms
 		}
 	}
-	
-	function init() {
-		//add new link to download a large comp
-		$('#download-comp').text('Download a Large Comp').attr('href', 'http://www.istockphoto.com/image-zoom/'+ZoomFileID+'/'+ZoomMaxSize+'/'+ZoomImageWidth+'/'+ZoomImageHeight+'/zoom-'+ZoomFileID+'-'+ZoomMaxSize+'.jpg');
-		$('#download-comp').attr('id', 'download-large-comp');
-		
-		$('#download-large-comp').click(function(event) {
-			event.preventDefault();
-
-			//trigger zoom
-			$('#zoom-hover-div').trigger('click');
-
-			//trigger zoom in to max
-			setTimeout(clicker, 250);
-		});
-	}
-
-	window.addEventListener("load", init, false)
 });
+
+function insertAfter(newNode, referenceNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextElementSibling);
+}

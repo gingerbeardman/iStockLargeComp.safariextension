@@ -1,0 +1,14 @@
+.super-cta {
+	width: 59.1% !important;
+	text-align: left !important;
+}
+
+.comp-cta {
+	margin-top: 1rem !important;
+	background-color: #339E33 !important;
+	border-color: #329933 !important;
+}
+
+.comp-cta:hover {
+	background-color: #339933 !important;
+}

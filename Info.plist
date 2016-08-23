@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Matt Sephton</string>
 	<key>Builder Version</key>
-	<string>8536.29.13</string>
+	<string>11601.7.7</string>
 	<key>CFBundleDisplayName</key>
 	<string>iStockLargeComp</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.03</string>
+	<string>3.0</string>
 	<key>CFBundleVersion</key>
-	<string>2.03</string>
+	<string>3.0</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -27,13 +27,18 @@
 		<dict>
 			<key>Start</key>
 			<array>
-				<string>zepto.js</string>
 				<string>iStockLargeComp.js</string>
 			</array>
 		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>iStockLargeComp.css</string>
+		</array>
 	</dict>
 	<key>Description</key>
-	<string>Changes the download comp link to point to a large comp on iStockphoto.com</string>
+	<string>Adds a download large comp link on iStockphoto.com</string>
+	<key>DeveloperIdentifier</key>
+	<string>Q3Z639YB49</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
